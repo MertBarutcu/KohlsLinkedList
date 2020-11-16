@@ -8,7 +8,6 @@ class SimpleLinkedList <E> : SimpleListForAnything<E>{
     override fun isEmpty() = first==null
 
     override fun addFirst(o: E) {
-        val newNode = Node (o, first)
         first = Node(o, first)
         isSorted = false
     }
